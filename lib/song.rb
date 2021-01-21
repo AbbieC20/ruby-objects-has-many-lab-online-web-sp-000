@@ -21,8 +21,11 @@ class Song
   end
 
   def artist_name
-    puts @artist
-    self.artist.name
+    if @artist.nil? 
+      return nil
+    else 
+      return self.artist.name
+    end 
   end
 
 end
